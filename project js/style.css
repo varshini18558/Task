@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box;
+}
+body{
+    background: #e3edf7;
+}
+
+
+.accordion{
+    margin: 5px auto;
+    width: 400px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                       -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+
+.accordion li label{
+   
+    cursor: pointer;
+}
+
+label::before{
+
+    content: '';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+/* input[type="radio"]{
+    display: none;
+} */
+
+
+.accordion .content{
+    /* color:#555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0; */
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked+ label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px ;
+}
+/* .accordion input[type="radio"]:checked + label::before{
+    content: '-';
+
+} */
+.button{
+    width: Fixed (358px);
+    height: Fixed (40px);
+    top: 497px;
+    left: 58px;
+    padding: 10px;
+    border-radius: 4px;
+    gap: 8px;
+    color: #FF6B82;
+
+}
+
+.popup{
+    width: 400px;
+    background:#FF6B82;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup buttons{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: null;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+
+}
+
+
+
+
+
+
+
+body {
+    margin: 30px;
+    background: #f7f2ff;
+    color:#4285f5;
+  }
+  .container {
+    margin-top: 30px;
+    color:#4285f4;
+  }

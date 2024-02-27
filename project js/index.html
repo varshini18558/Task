@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YAY! It's BOGO</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+        <h1 style="margin-left: 570px; color: #FF6B82;">YAY! It's BOGO</h1>
+    </head>
+    <body>
+       
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first" checked>
+                <label for="first"><b>1 Unit</b><span style="background-color: #FF6B82;color:#FFFFFF;margin-left: 20px;">10% off</span><span style="margin-left: 100px;">$10.00USD</span><br>Standard Price</label><br>
+               
+                <div class="content">
+                <p style="margin-left: 50px;">size<span style="margin-left: 40px;">color</span></p>
+                <label1 for="size">#1</label1>
+                <select name="size" id="size" style="margin-left: 30px;">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                   
+                </select>
+
+                <label1 for="color"></label1>
+                <select name="color" id="color" style="margin-left: 20px;">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                    <option value="white">White</option>
+                   
+                </select>
+            </li>
+        </ul>
+    </div>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second"><b>2 Unit</b><span style="background-color: #FF6B82;color:#FFFFFF;margin-left: 20px;">20% off</span><span style="margin-left: 100px;">$18.00USD</span><br>Standard Price</label><br>
+               
+                <div class="content">
+                <p style="margin-left: 50px;">size<span style="margin-left: 40px;">color</span></p>
+                <label1 for="size">#1</label1>
+                <select name="size" id="size" style="margin-left: 30px;">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                   
+                </select>
+
+                <label1 for="color"></label1>
+                <select name="color" id="color" style="margin-left: 20px;">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                    <option value="white">White</option>
+                   
+                </select>
+            </li>
+        </ul>
+    </div>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third"><b>3 Unit</b><span style="background-color: #FF6B82;color:#FFFFFF;margin-left: 20px;">30% off</span><span style="margin-left: 100px;">$24.00USD</span><br>Standard Price</label><br>
+               
+                <div class="content">
+                <p style="margin-left: 50px;">size<span style="margin-left: 40px;">color</span></p>
+                <label1 for="size">#1</label11>
+                <select name="size" id="size" style="margin-left: 30px;">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                   
+                </select>
+
+                <label1 for="color"></label1>
+                <select name="color" id="color" style="margin-left: 20px;">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                    <option value="white">White</option>
+                   
+                </select>
+            </li>
+        </ul>
+    </div>
+
+        <div>
+        <p style="margin-left: 520px;">Free Delivery<span style="margin-left: 110px;">Total:$18.00USD</span></p>
+         <button type="button" onclick="openpopup()" style="width: 330px;
+         height: Fixed (40px);
+         top: 497px;
+         margin-left: 525px;
+         padding: 10px;
+         border-radius: 4px;
+         gap: 8px;
+         background: #FF6B82;
+         ">+ Add to cart</button>
+         <div class="popup" id="popup">
+            <h2>Added to the cart</h2>
+            <button type="buttons" onclick="closepopup()">Ok</button>
+         </div>
+    </div>
+    
+    
+              
+            </div>
+            <script>
+            let popup= document.getElementById("popup");
+
+            function openpopup(){
+                popup.classList.add("open-popup");
+
+            }
+            
+            function closepopup(){
+                popup.classList.remove("open-popup");
+
+            }
+        </script>
+        </div>
+    </body>
+</html>
